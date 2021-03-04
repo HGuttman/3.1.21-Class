@@ -1,0 +1,11 @@
+﻿@model IndexViewModel
+<form action="/Home/Submit">
+    <div class="container">
+        <button class="btn btn-danger btn-block" id="btn">Submit</button>
+        <input value="@Model.Text" type="text" class="form-control" name="text" />
+    </div>
+</form>
+@foreach (var kvp in Model.Count)
+{
+    <h3>There are @kvp.Value @kvp.Key's</h3>
+}
