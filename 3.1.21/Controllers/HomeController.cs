@@ -18,6 +18,7 @@ namespace _3._1._21.Controllers
         public IActionResult Submit(string text)
         {
             var count = GetCount(text);
+            Console.Write("Changes Made");
             var vm = new IndexViewModel { Count = count, Text = text };
             return View(vm);
         }

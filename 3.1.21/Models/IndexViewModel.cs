@@ -10,4 +10,5 @@ namespace _3._1._21.Models
         public Dictionary<char, int> Count;
         public string Text;
     }
+    
 }
